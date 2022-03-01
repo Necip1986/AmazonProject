@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.847">
+<testcase classname="Sign in" name="User should be able to sign in with valid credentials" time="22.494">
+<failure message="" type="java.lang.AssertionError"><![CDATA[Given go to Amazon url......................................................passed
+Then navigate to sign in page...............................................passed
+Then enter valid email address to the email box.............................passed
+Then click continue button..................................................passed
+Then enter valid password to the password box...............................passed
+Then click sign in button...................................................passed
+Then verify sign in is successful...........................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at ui.stepDef.US02StepDef.verifySignInIsSuccessful(US02StepDef.java:64)
+	at ✽.verify sign in is successful(file:///C:/Users/admin/IdeaProjects/AmazonProject/src/test/resources/uiFeature/US_02.feature:16)
+]]></failure>
+</testcase>
+</testsuite>

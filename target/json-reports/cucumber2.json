@@ -1,0 +1,126 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9218000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "go to Amazon url",
+            "match": {
+              "location": "ui.stepDef.US01StepDef.go_to_Amazon_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2889000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigate to sign in page",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.navigate_to_sign_in_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-01T10:37:53.990Z",
+        "line": 11,
+        "name": "User should be able to sign in with valid credentials",
+        "description": "",
+        "id": "sign-in;user-should-be-able-to-sign-in-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "enter valid email address to the email box",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.enter_valid_email_address_to_the_email_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 103000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click continue button",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.clickContinueButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1807000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "enter valid password to the password box",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.enterValidPasswordToThePasswordBox()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 89000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click sign in button",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.clickSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat ui.stepDef.US02StepDef.verifySignInIsSuccessful(US02StepDef.java:64)\r\n\tat ✽.verify sign in is successful(file:///C:/Users/admin/IdeaProjects/AmazonProject/src/test/resources/uiFeature/US_02.feature:16)\r\n",
+              "duration": 8101000000,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "verify sign in is successful",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.verifySignInIsSuccessful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ParallelTest02"
+          },
+          {
+            "name": "@TC_02"
+          }
+        ]
+      }
+    ],
+    "name": "Sign in",
+    "description": "",
+    "id": "sign-in",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeature/US_02.feature",
+    "tags": []
+  }
+]

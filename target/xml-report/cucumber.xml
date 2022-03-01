@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="111.157">
+<testcase classname="US_09" name="User should be able to add products to the created list and remove it" time="110.741">
+<system-out><![CDATA[Given go to Amazon url......................................................passed
+Then navigate to sign in page...............................................passed
+Then enter valid email address to the email box.............................passed
+And click continue button...................................................passed
+Then enter valid password to the password box...............................passed
+And click sign in button....................................................passed
+Then enter "honey" into search box..........................................passed
+And click the search button.................................................passed
+Then select first product and add it to "Grocery List"......................passed
+Then verify the "first product" in "Grocery List"...........................passed
+Then select "Grocery List" from Account & Lists menu........................passed
+Then click Remove button for added product..................................passed
+Then verify the "first product" removed from "Grocery List".................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,191 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-03-01T10:17:16.812Z",
+        "line": 6,
+        "name": "TC_01 user should be able to go to Amazon website",
+        "description": "",
+        "id": "us-01-going-to-amazon-website;tc-01-user-should-be-able-to-go-to-amazon-website",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15197000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "go to Amazon url",
+            "match": {
+              "location": "ui.stepDef.US01StepDef.go_to_Amazon_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 229000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify Amazon page title",
+            "match": {
+              "location": "ui.stepDef.US01StepDef.verify_amazon_page_title()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_01"
+          },
+          {
+            "name": "@ParallelTests01"
+          },
+          {
+            "name": "@TC_01"
+          }
+        ]
+      }
+    ],
+    "name": "US_01 going to Amazon website",
+    "description": "",
+    "id": "us-01-going-to-amazon-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeature/US_01.feature",
+    "tags": [
+      {
+        "name": "@US_01",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3684000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "go to Amazon url",
+            "match": {
+              "location": "ui.stepDef.US01StepDef.go_to_Amazon_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3689000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigate to sign in page",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.navigate_to_sign_in_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-01T10:17:32.363Z",
+        "line": 21,
+        "name": "User should not be able to sign in with invalid credentials",
+        "description": "",
+        "id": "sign-in;user-should-not-be-able-to-sign-in-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "enter invalid email address to the email box",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.enterInvalidEmailAddressToTheEmailBox()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1700000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "click continue button",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.clickContinueButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 122000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "enter invalid password to the password box",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.enterInvalidPasswordToThePasswordBox()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 128000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click sign in button",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.clickSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1246000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify sign in is not successful",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.verifySignInIsNotSuccessful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ParallelTests01"
+          },
+          {
+            "name": "@TC_03"
+          }
+        ]
+      }
+    ],
+    "name": "Sign in",
+    "description": "",
+    "id": "sign-in",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeature/US_02.feature",
+    "tags": []
+  }
+]

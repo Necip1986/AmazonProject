@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="26.782">
+<testcase classname="US_01 going to Amazon website" name="TC_01 user should be able to go to Amazon website" time="15.525">
+<system-out><![CDATA[Given go to Amazon url......................................................passed
+Then verify Amazon page title...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Sign in" name="User should not be able to sign in with invalid credentials" time="10.761">
+<system-out><![CDATA[Given go to Amazon url......................................................passed
+Then navigate to sign in page...............................................passed
+Then enter invalid email address to the email box...........................passed
+Then click continue button..................................................passed
+Then enter invalid password to the password box.............................passed
+Then click sign in button...................................................passed
+Then verify sign in is not successful.......................................passed
+]]></system-out>
+</testcase>
+</testsuite>

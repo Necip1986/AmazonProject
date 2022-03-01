@@ -1,0 +1,232 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 18826000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "go to Amazon url",
+            "match": {
+              "location": "ui.stepDef.US01StepDef.go_to_Amazon_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8044000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "navigate to sign in page",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.navigate_to_sign_in_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 226000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "enter valid email address to the email box",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.enter_valid_email_address_to_the_email_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2029000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click continue button",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.clickContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter valid password to the password box",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.enterValidPasswordToThePasswordBox()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 105000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click sign in button",
+            "match": {
+              "location": "ui.stepDef.US02StepDef.clickSignInButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-26T20:22:47.781Z",
+        "line": 13,
+        "name": "User should be able to add products to the created list and remove it",
+        "description": "",
+        "id": "us-09;user-should-be-able-to-add-products-to-the-created-list-and-remove-it",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13952000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "enter \"honey\" into search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"honey\"",
+                  "offset": 6
+                }
+              ],
+              "location": "ui.stepDef.US05StepDef.enter_into_search_box(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11809000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "click the search button",
+            "match": {
+              "location": "ui.stepDef.US05StepDef.click_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44416000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "select first product and add it to \"Grocery List\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Grocery List\"",
+                  "offset": 35
+                }
+              ],
+              "location": "ui.stepDef.US09StepDef.select_first_product_and_add_it_to(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1094000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "verify the \"first product\" in \"Grocery List\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"first product\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Grocery List\"",
+                  "offset": 30
+                }
+              ],
+              "location": "ui.stepDef.US09StepDef.verify_the_in(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 512000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "select \"Grocery List\" from Account \u0026 Lists menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Grocery List\"",
+                  "offset": 7
+                }
+              ],
+              "location": "ui.stepDef.US08StepDef.select_from_account_lists_menu(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1155000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "click Remove button for added product",
+            "match": {
+              "location": "ui.stepDef.US09StepDef.click_remove_button_for_added_product()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8362000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "verify the \"first product\" removed from \"Grocery List\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"first product\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Grocery List\"",
+                  "offset": 40
+                }
+              ],
+              "location": "ui.stepDef.US09StepDef.verifyTheRemovedFrom(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC_09"
+          }
+        ]
+      }
+    ],
+    "name": "US_09",
+    "description": "",
+    "id": "us-09",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeature/US_09.feature",
+    "tags": []
+  }
+]
