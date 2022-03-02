@@ -21,12 +21,15 @@ public class US09StepDef {
     @Then("select first product and add it to {string}")
     public void select_first_product_and_add_it_to(String createdShoppingList) {
         addedProductName=searchPage.products.get(0).getText();
+        ReusableMethods.waitForClickablility(searchPage.products.get(0),10);
         searchPage.products.get(0).click();
-        ReusableMethods.waitFor(1);
+        //ReusableMethods.waitFor();
         actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.waitForClickablility(productDetailPage.addToListMenu,10);
         productDetailPage.addToListMenu.click();
         //ReusableMethods.waitForClickablility(productDetailPage.createdListAtAddToListMenu,5);
         //productDetailPage.createdListAtAddToListMenu.click();
+        ReusableMethods.waitForClickablility(productDetailPage.viewYourListButton,10);
         productDetailPage.viewYourListButton.click();
 
     }

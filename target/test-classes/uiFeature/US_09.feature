@@ -15,7 +15,7 @@
     #And click create list button
     #Then enter "Grocery List" to the List name box
     #And click create list button
-    Then enter "honey" into search box
+    Then enter "cucumber" into search box
     And click the search button
     Then select first product and add it to "Grocery List"
     Then verify the "first product" in "Grocery List"

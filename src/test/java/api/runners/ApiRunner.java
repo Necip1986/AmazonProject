@@ -1,4 +1,4 @@
-package ui.runners;
+package api.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -13,12 +13,12 @@ import org.junit.runner.RunWith;
 
         tags = "@api",
 
-        features="src/test/resources/uiFeature",
+        features="src/test/resources/apiFeature",
 
-        glue="ui/stepDef",
+        glue="api/stepDefs",
 
         dryRun=false
 
 )
-public class Runner {
+public class ApiRunner {
 }

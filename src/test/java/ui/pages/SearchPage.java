@@ -19,7 +19,7 @@ public class SearchPage {
     @FindBy (xpath = "//a[.='Price: Low to High']")
     public WebElement SortBylowToHigh;
 
-    @FindBy (xpath = "//span[@class='a-size-base-plus a-color-base a-text-normal']")
+    @FindBy (xpath = "//h2//span")
     public List<WebElement> productList;
 
     @FindBy (xpath = "//div[@class='sg-col sg-col-4-of-12 sg-col-8-of-16 sg-col-12-of-20 s-list-col-right']//div[@class='a-row a-size-base a-color-base']")
@@ -34,7 +34,7 @@ public class SearchPage {
     //@FindBy (xpath = "//span[@class='a-size-medium a-color-base a-text-normal']")
     //public List<WebElement>products;
 
-    @FindBy(xpath = "//h2[@class='a-size-mini a-spacing-none a-color-base s-line-clamp-2']")
+    @FindBy(xpath = "(//h2//span)[1]")
     public List<WebElement>products;
 
 

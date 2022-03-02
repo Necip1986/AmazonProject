@@ -54,6 +54,7 @@ public class US02StepDef {
     @Then("click sign in button")
     public void clickSignInButton() {
         signInPage.signInButton.click();
+        ReusableMethods.waitFor(10);
         log.info("clicked sign_in button");
     }
 
