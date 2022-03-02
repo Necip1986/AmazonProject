@@ -19,8 +19,8 @@ public class SearchPage {
     @FindBy (xpath = "//a[.='Price: Low to High']")
     public WebElement SortBylowToHigh;
 
-    @FindBy (xpath = "//h2//span")
-    public List<WebElement> productList;
+    //@FindBy (xpath = "//h2//span")
+    //public List<WebElement> productList;
 
     @FindBy (xpath = "//div[@class='sg-col sg-col-4-of-12 sg-col-8-of-16 sg-col-12-of-20 s-list-col-right']//div[@class='a-row a-size-base a-color-base']")
     public List<WebElement> prices;
